@@ -8,7 +8,7 @@ function Orders() {
     const fetchOrders = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8080/api/orders/myorders",
+          "https://sale-savvy.onrender.com/api/orders/myorders",
           {
             credentials: "include",
           }
