@@ -1,0 +1,144 @@
+.products-container {
+  padding: 40px;
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+.products-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.product-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 35px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.product-form input {
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.product-form input:focus {
+  outline: none;
+  border-color: #1677ff;
+}
+
+.product-form button {
+  background: #1677ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.product-form button:hover {
+  background: #0f5fe0;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.products-table th {
+  background: #1677ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.products-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.products-table tr:hover {
+  background: #f8fafc;
+}
+
+.products-table button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+}
+
+.products-table td:nth-child(6) button {
+  background: #1677ff;
+}
+
+.products-table td:nth-child(7) button {
+  background: #ef4444;
+}
+
+.products-table td:nth-child(6) button:hover {
+  background: #0f5fe0;
+}
+
+.products-table td:nth-child(7) button:hover {
+  background: #dc2626;
+}
+
+.back-btn {
+  background: #1677ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.back-btn:hover {
+  background: #0f5fe0;
+}
+
+
+
+.content-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.form-section {
+  width: 350px;
+}
+
+.table-section {
+  flex: 1;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

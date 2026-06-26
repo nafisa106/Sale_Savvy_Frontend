@@ -1,0 +1,105 @@
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+}
+
+/* Background */
+
+.register-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(rgba(15,23,42,.6),rgba(15,23,42,.6)),
+  url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1800");
+
+  background-size:cover;
+  background-position:center;
+}
+
+/* Glass card */
+
+.register-container{
+  width:450px;
+  padding:40px;
+  border-radius:25px;
+
+  background:rgba(255,255,255,.15);
+
+  backdrop-filter:blur(15px);
+
+  border:1px solid rgba(255,255,255,.2);
+
+  box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+/* Heading */
+
+.register-container h1{
+  text-align:center;
+  color:white;
+  margin-bottom:30px;
+}
+
+/* Form */
+
+.register-container form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.register-container label{
+  color:white;
+  font-weight:600;
+}
+
+/* Inputs */
+
+.register-container input,
+.register-container select{
+  width:100%;
+  box-sizing:border-box;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  font-size:15px;
+  outline:none;
+}
+
+/* Button */
+
+.register-container button{
+  margin-top:15px;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#2563eb;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.register-container button:hover{
+  background:#1d4ed8;
+}
+
+/* Login link */
+
+.login-link{
+  text-align:center;
+  margin-top:20px;
+  color:white;
+}
+
+.login-link a{
+  text-decoration:none;
+}
+
+.login-link span{
+  color:#60a5fa;
+  font-weight:600;
+}
