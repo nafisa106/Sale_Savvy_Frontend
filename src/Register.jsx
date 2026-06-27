@@ -22,7 +22,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "https://sale-savvy.onrender.com/api/users/register",
+        "http://localhost:8080/api/users/register",
         {
           method: "POST",
           headers: {

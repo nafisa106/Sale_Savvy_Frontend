@@ -14,7 +14,7 @@ function AdminProducts() {
   const [editingProductId, setEditingProductId] = useState(null);
 
   useEffect(() => {
-    fetch("https://sale-savvy.onrender.com/admin/products", {
+    fetch("http://localhost:8080/admin/products", {
       credentials: "include",
     })
       .then((response) => response.json())
@@ -28,7 +28,7 @@ function AdminProducts() {
      const deleteProduct = async (productId) => {
   try {
     const response = await fetch(
-      "https://sale-savvy.onrender.com/admin/products/delete",
+      "http://localhost:8080/admin/products/delete",
       {
         method: "DELETE",
         credentials: "include",
@@ -62,7 +62,7 @@ function AdminProducts() {
 const addProduct = async () => {
   try {
     const response = await fetch(
-      "https://sale-savvy.onrender.com/admin/products/add",
+      "http://localhost:8080/admin/products/add",
       {
         method: "POST",
         credentials: "include",
@@ -122,7 +122,7 @@ const editProduct = (product) => {
 const updateProduct = async () => {
   try {
     const response = await fetch(
-      "https://sale-savvy.onrender.com/admin/products/update",
+      "http://localhost:8080/admin/products/update",
       {
         method: "PUT",
         credentials: "include",

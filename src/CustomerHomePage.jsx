@@ -26,7 +26,7 @@ export default function CustomerHomePage() {
   const fetchProducts = async (category = "") => {
     try {
       const response = await fetch(
-        `https://sale-savvy.onrender.com/api/products${
+        `http://localhost:8080/api/products${
           category ? `?category=${category}` : ""
         }`,
         {
@@ -59,7 +59,7 @@ export default function CustomerHomePage() {
   const fetchCartCount = async () => {
     try {
       const response = await fetch(
-        `https://sale-savvy.onrender.com/api/cart/items/count?username=${username}`,
+        `http://localhost:8080/api/cart/items/count?username=${username}`,
         {
           credentials: "include",
         }
@@ -86,7 +86,7 @@ export default function CustomerHomePage() {
 
     try {
       const response = await fetch(
-        "https://sale-savvy.onrender.com/api/cart/add",
+        "http://localhost:8080/api/cart/add",
         {
           method: "POST",
           credentials: "include",

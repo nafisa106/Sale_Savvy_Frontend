@@ -14,7 +14,7 @@ export function ProfileDropdown({ username }) {
   const fetchOrderCount = async () => {
     try {
       const response = await fetch(
-        "https://sale-savvy.onrender.com/api/orders/count",
+        "http://localhost:8080/api/orders/count",
         {
           credentials: "include"
         }
@@ -33,7 +33,7 @@ export function ProfileDropdown({ username }) {
 }, []);
   const handleLogout = async () => {
     try {
-      const response = await fetch('https://sale-savvy.onrender.com/api/auth/logout', {
+      const response = await fetch('http://localhost:8080/api/auth/logout', {
         method: 'POST', // Use POST as logout often involves session clearing
         credentials: 'include', // Include credentials like cookies for authentication
       });

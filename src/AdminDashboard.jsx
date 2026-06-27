@@ -15,7 +15,7 @@ const [orders, setOrders] = useState([]);
 const [filter, setFilter] = useState("all");
 
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/count", {
+  fetch("http://localhost:8080/admin/products/count", {
     credentials: "include",
   })
     .then((response) => {
@@ -33,7 +33,7 @@ useEffect(() => {
 
 
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/users/count", {
+  fetch("http://localhost:8080/admin/products/users/count", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -44,7 +44,7 @@ useEffect(() => {
 
 
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/orders/count", {
+  fetch("http://localhost:8080/admin/products/orders/count", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -55,7 +55,7 @@ useEffect(() => {
 
 
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/revenue", {
+  fetch("http://localhost:8080/admin/products/revenue", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -67,7 +67,7 @@ useEffect(() => {
 
 // -------Daily evenue----------
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/revenue/daily", {
+  fetch("http://localhost:8080/admin/products/revenue/daily", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -79,7 +79,7 @@ useEffect(() => {
 
 // -------Montly Revenue----------
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/revenue/monthly", {
+  fetch("http://localhost:8080/admin/products/revenue/monthly", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -95,7 +95,7 @@ useEffect(() => {
 // -------Yearky Revenue----------
 
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/products/revenue/yearly", {
+  fetch("http://localhost:8080/admin/products/revenue/yearly", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -107,7 +107,7 @@ useEffect(() => {
 
 // ------------orders status------------------
 useEffect(() => {
-  fetch("https://sale-savvy.onrender.com/admin/orders", {
+  fetch("http://localhost:8080/admin/orders", {
     credentials: "include",
   })
     .then((response) => response.json())
@@ -131,7 +131,7 @@ const filteredOrders =
 const updateOrderStatus = async (orderId, status) => {
   try {
     const response = await fetch(
-      "https://sale-savvy.onrender.com/admin/orders/status",
+      "http://localhost:8080/admin/orders/status",
       {
         method: "PUT",
         credentials: "include",
@@ -170,7 +170,7 @@ const updateOrderStatus = async (orderId, status) => {
 const logout = async () => {
   try {
     const response = await fetch(
-      "https://sale-savvy.onrender.com/api/auth/logout",
+      "http://localhost:8080/api/auth/logout",
       {
         method: "POST",
         credentials: "include",
